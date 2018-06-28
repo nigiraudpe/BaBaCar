@@ -1,0 +1,24 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+  <div class="blankSpace-md">
+  </div>
+  <div class="centralPart">
+    <h1 class="centered bigMarginBot horizontalCenter">BaBaCar</h1>
+    <ion-item>
+      <ion-input [(ngModel)]="log" placeholder="Identifiant"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="passwd" type="password" placeholder="Mot de Passe"></ion-input>
+    </ion-item>
+    <p style="color:red">{{ error }}</p>
+    <button class="smallMarginTop centeredItem" ion-button (click)="login()" >Se connecter</button>
+    <button class="smallMarginTop centeredItem" ion-button (click)="register()">Nouveau compte</button>
+  </div>
+</ion-content>
